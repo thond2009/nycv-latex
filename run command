@@ -1,0 +1,3 @@
+cd c:\Users\thond\Desktop\Awesome-CV\myprj
+xelatex -interaction=nonstopmode resume.tex
+

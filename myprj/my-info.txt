@@ -1,0 +1,100 @@
+Nguyen Dat Tho
+323/83 Xuan Dinh, Ha Noi
+
+ 0373124823 |
+
+ thond2009@gmail.com
+
+Objective
+
+Highly accomplished Embedded Linux Developer with over 9 years of experience in architecting, developing, and deploying mission‑critical soft‑
+ware solutions. Expert in the Yocto Project, CI/CD orchestration, and hardware‑in‑the‑loop testing. Proven track record of optimizing system
+performance and leading complex migrations (32‑bit to 64‑bit) for industrial‑grade products. Committed to technical excellence and innovation in
+embedded systems.
+
+Work Experience
+TSDV (Toshiba Software Development Vietnam)
+SOFTWARE ENGiNEER
+
+Hanoi, Vietnam
+2015 – 2024
+
+• Spearheaded the design and maintenance of tailored Embedded Linux distributions for Toshiba’s industrial computer series.
+• Engineered robust builds primarily using Yocto Project and meta‑debian, ensuring high system stability and long‑term support.
+• Built and maintained automated test systems using Fuego (Jenkins‑based) and LAVA to streamline hardware‑in‑the‑loop vali‑
+dation.
+
+Projects
+1. Development of NV Series for Industrial Computer
+DEVELOPER | TEAM SiZE: 6
+
+C, Python, Bash, Yocto,
+QEMU‑KVM
+Jan 2015 – Mar 2018
+
+• Architected the migration of legacy C applications from 32‑bit to 64‑bit architecture, ensuring seamless compatibility and per‑
+formance gains.
+• Customized and optimized Debian‑based distributions using Yocto, satisfying strict industrial reliability requirements.
+• Engineered an automated testing framework using Fuego to ensure rapid and reliable delivery of OS updates.
+• Leveraged KVM virtualization with hardware binding to maximize performance for specialized industrial workloads.
+Git, Yocto, Linux Kernel, Bash,
+
+
+2. Development of Toshiba Linux OS
+Python, LAVA
+DEVELOPER | TEAM SiZE: 11
+Apr 2018 – Mar 2019
+• Developed and maintained production‑grade Linux OS using Yocto (Morty) and meta‑debian.
+• Implemented automated hardware testing by deploying LAVA and Fuego, significantly reducing manual validation effort.
+Git, GitLab CI, Docker, Debos,
+
+
+3. Development of Toshiba OSS
+Linux Kernel, Bash
+DEVELOPER | TEAM SiZE: 8
+Apr 2019 – Mar 2023
+• Developed and maintained modular Linux OS distributions using the Debos build tool.
+• Resolved complex bootloader and kernel issues on diverse embedded platforms, including BeagleBone Black and Raspberry Pi.
+• Deployed Fossology to automate the management of open‑source licenses and ensure compliance across the organization.
+• Architected containerized CI/CD pipelines using GitLab CI and Docker for cross‑project efficiency.
+• Contributed to the CIP (Civil Infrastructure Platform) project, collaborating with Renesas and Siemens on long‑term OS main‑
+tenance.
+
+
+4. Development of Toshiba Linux OS (New Generation)
+Bash, Python, Rust, C
+DEVELOPER | TEAM SiZE: 5
+Apr 2023 – Aug 2024
+• Innovated product features by integrating SWUpdate for secure, fail‑safe OTA updates and implementing reproducible builds.
+• Managed the full‑cycle transition of Linux OS distributions to newer Debian stable releases.
+• Explored and benchmarked WebAssembly (WASM) runtimes across Ubuntu, Debian, Zephyr, and ROS for edge computing appli‑
+cations.
+
+LG Electronics Development Vietnam (LGEDV)
+
+Bash, Yocto, CMake, Jenkins,
+Docker, Git
+
+Projects
+1. WebOS & ATLAS | TEAM SiZE: 4
+
+Sep 2024 – Present
+
+• Managing the end‑to‑end SCM lifecycle for LG’s next‑generation platform, leveraging Jenkins, Gerrit, and Grafana.
+• Developing and optimizing Yocto‑based build environments for high‑performance Linux distributions.
+• Actively contributing technical improvements to the Yocto Project and OpenEmbedded upstream repositories.
+
+Skills
+Core Embedded
+Languages
+Build & DevOps
+Platforms
+Testing
+
+Linux Kernel Development • Yocto Project • Debos • meta‑debian • KAS • SWUpdate • OTA Updates
+C (Expert) • Python • Bash Scripting • Rust • YAML • CMake
+Jenkins • Gerrit • GitLab CI • Docker • Grafana • Git • Fossology
+BeagleBone Black • Raspberry Pi • Arduino • Debian • Ubuntu • Zephyr • ROS
+Fuego (Jenkins‑based) • LAVA • Automated Hardware‑in‑the‑loop (HIL) Testing
+
+
