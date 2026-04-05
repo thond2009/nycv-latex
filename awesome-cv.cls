@@ -81,30 +81,28 @@
 \defaultfontfeatures{
   Renderer=HarfBuzz,
 }
-\setmainfont{Source Sans 3}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
-]
-\setsansfont{Source Sans 3}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
-]
-\newfontfamily\roboto{Roboto}[
-  UprightFont=*,
-  ItalicFont=* Italic,
-  BoldFont=* Bold,
-  BoldItalicFont=* Bold Italic,
-  FontFace={l}{n}{Font=* Light},
-  FontFace={l}{it}{Font=* Light Italic},
-]
+% Use a robust fallback chain so XeLaTeX works across different machines.
+\IfFontExistsTF{Source Sans 3}{
+  \setmainfont{Source Sans 3}
+  \setsansfont{Source Sans 3}
+  \newfontfamily\roboto{Source Sans 3}
+}{
+  \IfFontExistsTF{Segoe UI}{
+    \setmainfont{Segoe UI}
+    \setsansfont{Segoe UI}
+    \newfontfamily\roboto{Segoe UI}
+  }{
+    \IfFontExistsTF{TeX Gyre Heros}{
+      \setmainfont{TeX Gyre Heros}
+      \setsansfont{TeX Gyre Heros}
+      \newfontfamily\roboto{TeX Gyre Heros}
+    }{
+      \setmainfont{Latin Modern Sans}
+      \setsansfont{Latin Modern Sans}
+      \newfontfamily\roboto{Latin Modern Sans}
+    }
+  }
+}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
 % Needed to deal a paragraphs
@@ -544,7 +542,7 @@
       \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
-          \href{\@teluri}{\faAlt{tel:\@mobile}{\faMobile}{\@mobile}}%
+          \href{\@teluri}{\faAlt{tel:\@mobile}{\faMobile}{Phone: \@mobile}}%
           \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@whatsapp}}%
@@ -557,7 +555,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{mailto:\@email}{\faAlt{mailto:\@email}{\faEnvelope}{\@email}}%
+          \href{mailto:\@email}{\faAlt{mailto:\@email}{\faEnvelope}{Email: \@email}}%
         }%
       \ifthenelse{\isundefined{\@dateofbirth}}%
         {}%
